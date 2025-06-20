@@ -1,0 +1,9 @@
+name: Hello World Workflow  # 工作流名称
+on: [push]                  # 触发条件：代码推送时执行
+jobs:
+  say-hello:                # 任务名称
+    runs-on: ubuntu-latest   # 运行环境（GitHub 免费提供）
+    steps:
+
+      - name: Print Message # 步骤名称
+        run: echo "Hello World from GitHub Actions!"  # 执行的命令
